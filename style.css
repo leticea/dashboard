@@ -172,6 +172,11 @@ svg circle:nth-child(2) {
   gap: 3.2rem;
 }
 
+.weekly-sell .left,
+.weekly-sell .right {
+  flex: 1;
+}
+
 .left .grid {
   gap: 0.8rem;
   font-weight: 500;
@@ -202,4 +207,22 @@ svg circle:nth-child(2) {
   background: linear-gradient(180deg, #ea5455 0%, #feb692 100%);
   transform: matrix(1, 0, 0, -1, 0, 0);
   margin-bottom: 0.2rem;
+}
+
+.bars {
+  display: flex;
+  gap: 5.9rem;
+}
+
+.bar-wrapper {
+  display: grid;
+  justify-items: center;
+}
+
+.bar {
+  width: 1.5rem;
+  background: linear-gradient(180deg, #90F7EC 0%, #32CCBC 100%);
+  border-radius: 999px;
+
+  height: 3rem;
 }
