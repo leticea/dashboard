@@ -14,6 +14,10 @@ body {
   font-size: 1.6rem;
 }
 
+.grid {
+  display: grid;
+}
+
 .box {
   padding: 2.9rem 4.8rem;
 
@@ -23,8 +27,11 @@ body {
 }
 
 #app {
-  display: grid;
-  grid-template-columns: max-content max-content max-content;
+  background: #292738;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 5.9rem;
 
   width: 100vw;
   height: 100vh;
