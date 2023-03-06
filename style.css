@@ -66,8 +66,18 @@ body {
 
 .bottom .item {
   display: flex;
-  
+  align-items: center;
   gap: 1rem;
+}
+
+.bottom .item span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.bottom .item span {
+  --bg-color: #4a4556;
 }
 
 .bottom .item span:nth-child(1)::before {
@@ -75,7 +85,7 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   display: block;
-  background: #4A4556;
+  background: var(--bg-color);
   border-radius: 999px;
 }
 
