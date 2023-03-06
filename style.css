@@ -13,6 +13,7 @@
 body {
   font-size: 1.6rem;
   font-family: "Inter";
+  background: #292738;
 }
 
 .grid {
@@ -31,26 +32,22 @@ body {
   border-radius: 1.6rem;
   color: #fff;
   line-height: 160%;
+
+  gap: 3.2rem;
 }
 
 #app {
-  background: #292738;
-
-  grid-template-columns: 29.6rem max-content max-content;
-  grid-template-rows: max-content;
   column-gap: 3.2rem;
   row-gap: 5.9rem;
 
   width: fit-content;
   height: fit-content;
   min-height: 100vh;
-  min-width: 100vw;
+
+  margin: auto;
 
   place-content: center;
-}
-
-.box:nth-child(4) {
-  grid-column: 1/4;
+  padding: 3.2rem;
 }
 
 .top {
@@ -221,7 +218,7 @@ svg circle:nth-child(2) {
   display: block;
   height: 0.3rem;
   width: 100%;
-  background: #4A4556;
+  background: #4a4556;
   border-radius: 999px;
   position: absolute;
   top: 50%;
@@ -231,15 +228,36 @@ svg circle:nth-child(2) {
 
 .bar-wrapper {
   display: grid;
+  grid-template-rows: 15.9rem 1.6rem;
   justify-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
   z-index: 1;
 }
 
 .bar {
   width: 1.5rem;
-  background: linear-gradient(180deg, #90F7EC 0%, #32CCBC 100%);
+  background: linear-gradient(180deg, #90f7ec 0%, #32ccbc 100%);
   border-radius: 999px;
 
   height: var(--height);
+  align-self: end;
+
+  animation: up 1.4s;
+}
+
+@keyframes up {
+  0% {
+    height: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #app {
+    grid-template-columns: 29.6rem max-content max-content;
+    grid-template-rows: max-content;
+  }
+
+  .box:nth-child(4) {
+    grid-column: 1/4;
+  }
 }
