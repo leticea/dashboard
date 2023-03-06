@@ -112,8 +112,10 @@ body {
 }
 
 svg {
+  --percentage: 0;
   width: 19.7rem;
   height: 19.7rem;
+  transform: rotate(-90deg);
 }
 
 svg circle {
@@ -128,5 +130,6 @@ svg circle:nth-child(1) {
 }
 
 svg circle:nth-child(2) {
-  stroke-dashoffset: calc(618 - (618 * 70)/100);
+  stroke-dashoffset: calc(618 - (618 * var(--percentage))/100);
+  stroke-linecap: round;
 }
