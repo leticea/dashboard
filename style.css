@@ -212,11 +212,28 @@ svg circle:nth-child(2) {
 .bars {
   display: flex;
   gap: 5.9rem;
+  align-items: flex-end;
+  position: relative;
+}
+
+.bars::before {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  width: 100%;
+  background: #4A4556;
+  border-radius: 999px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
 }
 
 .bar-wrapper {
   display: grid;
   justify-items: center;
+  gap: .5rem;
+  z-index: 1;
 }
 
 .bar {
@@ -224,5 +241,5 @@ svg circle:nth-child(2) {
   background: linear-gradient(180deg, #90F7EC 0%, #32CCBC 100%);
   border-radius: 999px;
 
-  height: 3rem;
+  height: var(--height);
 }
