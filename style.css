@@ -54,6 +54,18 @@ body {
   text-align: center;
 }
 
+.bottom {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.bottom .item {
+  display: flex;
+  gap: 1rem;
+}
+
 .nps {
   width: 29.6rem;
   gap: 3.2rem;
@@ -71,7 +83,5 @@ body {
 .nps .bottom {
   font-weight: 500;
   font-size: 14px;
-  display: flex;
-  justify-content: center;
   gap: 1rem;
 }
