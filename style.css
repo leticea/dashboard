@@ -109,6 +109,7 @@ body {
 .middle {
   display: grid;
   place-content: center;
+  position: relative;
 }
 
 svg {
@@ -141,4 +142,16 @@ svg circle:nth-child(2) {
     stroke-dasharray: 618;
     stroke-dashoffset: 618;
   }
+}
+
+.middle .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 3.4rem;
 }
