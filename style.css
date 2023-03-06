@@ -32,6 +32,7 @@ body {
   background: #292738;
 
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: max-content;
   column-gap: 3.2rem;
   row-gap: 5.9rem;
 
