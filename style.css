@@ -155,3 +155,7 @@ svg circle:nth-child(2) {
 .content h3 {
   font-size: 3.4rem;
 }
+
+.text-left {
+  text-align: left;
+}
